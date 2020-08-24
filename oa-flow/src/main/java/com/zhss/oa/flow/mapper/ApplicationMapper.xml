@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+
+<mapper namespace="com.zhss.oa.flow.mapper.ApplicationMapper">
+
+    <resultMap id="AuthorizationResultMap" type="com.zhss.oa.flow.model.Application">
+        <result column="id" property="id"></result>
+        <result column="employee_id" property="employeeId"></result>
+        <result column="days" property="days"></result>
+    </resultMap>
+
+    <insert id="create" parameterType="com.zhss.oa.flow.model.Application" useGeneratedKeys="true" keyProperty="id">
+    	INSERT INTO application(employee_id,days) VALUES(#{employeeId},#{days})
+    </insert>
+
+    <delete id="delete">
+        delete from application where id = #{id}
+    </delete>
+
+    <select id="findById" parameterType="int" resultType="com.zhss.oa.flow.model.Application">
+        SELECT * FROM application WHERE id=#{id}
+    </select>  
+    
+</mapper>  
