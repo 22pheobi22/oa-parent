@@ -17,7 +17,8 @@ public class AuthorizationServiceTest {
 	private AuthorizationService authorizationService;
 
 	private Long _id;
-	
+
+
 	@Test
 	public void testAuthorize() {
 		Authorization auth = new Authorization();
