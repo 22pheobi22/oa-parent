@@ -26,6 +26,7 @@ public class AuthorizationServiceTest {
 		auth.setEmployeeId(1L);
 		authorizationService.authorize(auth);
 
+		
 		this._id = auth.getId();
 		assertEquals(true,this._id>0);
 	}
