@@ -15,7 +15,6 @@ public class AuthorizationServiceTest {
 	
 	@Autowired  
 	private AuthorizationService authorizationService;
-
 	private Long _id;
 	
 	@Test
