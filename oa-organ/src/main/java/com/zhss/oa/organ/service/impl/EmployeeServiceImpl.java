@@ -22,4 +22,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employeeMapper.findEmployeeById(id);
 	}
 
+	public void updateEmployee(){
+
+	}
 }
