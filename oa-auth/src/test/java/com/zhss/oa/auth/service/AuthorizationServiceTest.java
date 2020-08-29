@@ -34,7 +34,7 @@ public class AuthorizationServiceTest {
 		auth.setId(1L);
 		auth.setEmployeeId(1L);
 		authorizationService.authorize(auth);
-
+		System.out.println("prepare to execute findById sql...");
 		Authorization _auth = authorizationService.findById(auth.getId());
 		assertEquals(true,_auth!=null);
 	}
