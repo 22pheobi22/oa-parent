@@ -29,6 +29,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 	@Override
 	public Authorization findById(Long id) {
 		System.out.println("test stash ,master上bugfix");
+		System.out.println("test git stash");
 		return authorizationMapper.findById(id);
 	}
 }
