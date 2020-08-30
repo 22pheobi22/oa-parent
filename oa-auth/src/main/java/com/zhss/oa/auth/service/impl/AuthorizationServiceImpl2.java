@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
  * @Version V1.0
  */
 @Service("authorizationServiceImpl")
-public class AuthorizationServiceImpl implements AuthorizationService {
+public class AuthorizationServiceImpl2 implements AuthorizationService {
 	@Autowired
 	private AuthorizationMapper authorizationMapper;
 
